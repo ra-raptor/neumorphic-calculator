@@ -30,7 +30,7 @@ body {
 }
 
 .wrapper {
-  padding: 3rem .8rem;
+  padding: 3rem .8rem .2rem .8rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -103,6 +103,21 @@ body {
   min-height: 24px;
 }
 
+.wrapper footer {
+  grid-column: span 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .8rem;
+}
+
 .wrapper-dark {
   color: #ccc !important;
   background: #131419;
@@ -123,13 +138,17 @@ body {
 }
 
 .wrapper-dark .btn:hover {
-  color: green;
+  color: #008000;
 }
 
 .wrapper-dark .screen {
   background: #131419;
   -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.61), -2px -2px 5px rgba(255, 255, 255, 0.15), inset 2px 2px 6px rgba(58, 58, 58, 0.2), inset -4px -4px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.61), -2px -2px 5px rgba(255, 255, 255, 0.15), inset 2px 2px 6px rgba(58, 58, 58, 0.2), inset -4px -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-dark footer {
+  color: #535353;
 }
 
 .wrapper-light {
@@ -159,5 +178,9 @@ body {
   background: #e8eff5;
   -webkit-box-shadow: 3px 3px 7px #bbcfda, -2px -2px 6px #ffffff, inset 2px 2px 8px rgba(209, 217, 230, 0.2), inset -4px -4px 4px rgba(255, 255, 255, 0.2);
           box-shadow: 3px 3px 7px #bbcfda, -2px -2px 6px #ffffff, inset 2px 2px 8px rgba(209, 217, 230, 0.2), inset -4px -4px 4px rgba(255, 255, 255, 0.2);
+}
+
+.wrapper-light footer {
+  color: #535353;
 }
 /*# sourceMappingURL=main.css.map */

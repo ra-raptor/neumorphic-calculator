@@ -26,7 +26,7 @@ body{
 }
 
 .wrapper{
-    padding: 3rem .8rem;
+    padding: 3rem .8rem .2rem .8rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: .8rem;
@@ -73,6 +73,14 @@ body{
             min-height: 24px;
         }
     }
+    footer{
+        grid-column: span 4;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: .8rem;
+    }
 }
 
 .wrapper-dark{
@@ -101,7 +109,7 @@ body{
     }
 
     .btn:hover {
-        color: green;
+        color: #008000;
     }
 
     .screen {
@@ -110,6 +118,10 @@ box-shadow: 3px 3px 8px rgba($color: #000000, $alpha: .61),
 -2px -2px 5px rgba($color: #fff, $alpha: .15),
 inset 2px 2px 6px rgba(58, 58, 58, 0.2),
 inset -4px -4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer{
+        color: #535353;
     }
 }
 
@@ -143,5 +155,8 @@ inset -4px -4px 8px rgba(0, 0, 0, 0.2);
         -2px -2px 6px #ffffff,
         inset 2px 2px 8px rgba(209, 217, 230, 0.2),
         inset -4px -4px 4px rgba(255, 255, 255, .2);
+    }
+    footer{
+        color: #535353;
     }
 }
