@@ -14,6 +14,7 @@ html,body{
 
 body{
     background-color: #e8eff5; //
+    // background: #131419;
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -75,7 +76,41 @@ body{
 }
 
 .wrapper-dark{
+    color: #ccc !important;
+    background: #131419;
+    box-shadow: 3px 3px 12px rgba($color: #000000, $alpha: .61),
+    -2px -2px 6px rgba($color: #fff, $alpha: .15),
+    inset 2px 2px 8px rgba(58, 58, 58, 0.2),
+    inset -4px -4px 4px rgba(0,0,0, 0.2);
 
+    .btn {
+        color: #ccc;
+        background: #131419;
+    box-shadow: 3px 3px 8px rgba($color: #000000, $alpha: .61),
+    -2px -2px 5px rgba($color: rgb(0, 0, 0), $alpha: .15),
+    inset 2px 2px 6px rgba(58, 58, 58, 0.2),
+    inset -4px -4px 8px rgba(0, 0, 0, 0.2);
+    // border: 1px solid rgba($color: #000, $alpha: .05);
+    }
+
+    .btn:active {
+    box-shadow: 3px 3px 7px rgba($color: #000000, $alpha: .3),
+    -2px -2px 6px rgba($color: #000, $alpha: .5),
+    inset 2px 2px 8px rgba(12, 12, 12, 0.2),
+    inset -4px -4px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+        color: green;
+    }
+
+    .screen {
+        background: #131419;
+box-shadow: 3px 3px 8px rgba($color: #000000, $alpha: .61),
+-2px -2px 5px rgba($color: #fff, $alpha: .15),
+inset 2px 2px 6px rgba(58, 58, 58, 0.2),
+inset -4px -4px 8px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .wrapper-light{
@@ -109,5 +144,4 @@ body{
         inset 2px 2px 8px rgba(209, 217, 230, 0.2),
         inset -4px -4px 4px rgba(255, 255, 255, .2);
     }
-
 }

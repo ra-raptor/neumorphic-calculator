@@ -3,6 +3,7 @@ class Calculator {
     this.output1 = output1;
     this.output2 = output2;
     this.clear();
+    this.lightTheme = true;
   }
   clear() {
     this.currentOperation = "";
@@ -64,6 +65,20 @@ class Calculator {
       this.output1.innerText = this.previousOperation;
     }
   }
+  toggleTheme() {
+    if (this.lightTheme) {
+      document.body.style.background = "#131419";
+      theme.innerHTML = "<i class='fa fa-moon '></i>";
+      document.querySelector("#wrapper").classList.add("wrapper-dark");
+      document.querySelector("#wrapper").classList.remove("wrapper-light");
+    } else {
+      document.body.style.background = "#e8eff5";
+      theme.innerHTML = "<i class='fa fa-sun '></i>";
+      document.querySelector("#wrapper").classList.remove("wrapper-dark");
+      document.querySelector("#wrapper").classList.add("wrapper-light");
+    }
+    this.lightTheme = !this.lightTheme;
+  }
 }
 
 const numbers = document.querySelectorAll(".number");
@@ -106,4 +121,8 @@ del.addEventListener("click", (button) => {
   calculator.delete();
   calculator.updateDisplay();
   ``;
+});
+
+theme.addEventListener("click", (btn) => {
+  calculator.toggleTheme();
 });

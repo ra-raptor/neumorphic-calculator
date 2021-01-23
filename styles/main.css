@@ -103,6 +103,35 @@ body {
   min-height: 24px;
 }
 
+.wrapper-dark {
+  color: #ccc !important;
+  background: #131419;
+  -webkit-box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.61), -2px -2px 6px rgba(255, 255, 255, 0.15), inset 2px 2px 8px rgba(58, 58, 58, 0.2), inset -4px -4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.61), -2px -2px 6px rgba(255, 255, 255, 0.15), inset 2px 2px 8px rgba(58, 58, 58, 0.2), inset -4px -4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-dark .btn {
+  color: #ccc;
+  background: #131419;
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.61), -2px -2px 5px rgba(0, 0, 0, 0.15), inset 2px 2px 6px rgba(58, 58, 58, 0.2), inset -4px -4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.61), -2px -2px 5px rgba(0, 0, 0, 0.15), inset 2px 2px 6px rgba(58, 58, 58, 0.2), inset -4px -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-dark .btn:active {
+  -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3), -2px -2px 6px rgba(0, 0, 0, 0.5), inset 2px 2px 8px rgba(12, 12, 12, 0.2), inset -4px -4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3), -2px -2px 6px rgba(0, 0, 0, 0.5), inset 2px 2px 8px rgba(12, 12, 12, 0.2), inset -4px -4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-dark .btn:hover {
+  color: green;
+}
+
+.wrapper-dark .screen {
+  background: #131419;
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.61), -2px -2px 5px rgba(255, 255, 255, 0.15), inset 2px 2px 6px rgba(58, 58, 58, 0.2), inset -4px -4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.61), -2px -2px 5px rgba(255, 255, 255, 0.15), inset 2px 2px 6px rgba(58, 58, 58, 0.2), inset -4px -4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .wrapper-light {
   color: #333;
   background: #e8eff5;
