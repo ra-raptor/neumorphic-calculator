@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #e8eff5; //
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+.text-dark{
+    color: #333;
+}
+
+.wrapper{
+    padding: 3rem .8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: .8rem;
+    grid-auto-rows: minmax(60px,auto);
+    justify-content: start;
+    .btn{
+        width: 60px;
+        height: 60px;
+        border-radius: .7rem;
+        outline: none;
+        line-height: 60px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+    .equals{
+        grid-column: 3/5;
+        width: 100%;
+    }
+    .btn:active{
+        -webkit-tap-highlight-color: transparent;
+        transform: translateY(1px);
+    }
+    .screen {
+        width: 100%;
+        max-width: 280px;
+        border-radius: .7rem;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+        word-wrap: break-word;word-break: break-all;
+        display: flex;
+        padding: 10px 15px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: right;
+        grid-column : span 4;
+        .output1{
+            font-size: .8rem;
+            min-height: 16px;
+        }
+        .output2{
+            font-size: 1.2rem;
+            min-height: 24px;
+        }
+    }
+}
+
+.wrapper-dark{
+
+}
+
+.wrapper-light{
+    color: #333;
+    background: #e8eff5;
+    box-shadow: 3px 3px 7px #bbcfda,
+    -2px -2px 6px #ffffff,
+    inset 2px 2px 8px rgba(209, 217, 230, 0.2),
+    inset -4px -4px 4px rgba(255, 255, 255, .2);
+    .btn{
+        background: #e8eff5;
+        box-shadow: 3px 3px 7px #bbcfda,
+        -2px -2px 6px #ffffff,
+        inset 2px 2px 4px rgba(209, 217, 230, 0.2),
+        inset -4px -4px 4px rgba(255, 255, 255, .2);
+        border: 1px solid rgba($color: #fff, $alpha: .3);
+    }
+    .btn:active{
+        box-shadow: 2px 1px 9px #bbcfda,
+        -2px -2px 6px #ffffff,
+        inset 3px 3px 8px rgba(209, 217, 230, 0.8),
+        inset -4px -4px 4px rgba(255, 255, 255, .2);
+    }
+    .btn:hover {
+        color: green;
+    }
+    .screen {
+        background: #e8eff5;
+        box-shadow: 3px 3px 7px #bbcfda,
+        -2px -2px 6px #ffffff,
+        inset 2px 2px 8px rgba(209, 217, 230, 0.2),
+        inset -4px -4px 4px rgba(255, 255, 255, .2);
+    }
+
+}
