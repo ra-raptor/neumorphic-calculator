@@ -1,4 +1,5 @@
 # neumorphic-calculator
+### A simple Calculator made with JavaScript, HTML and SCSS to practice Neumorphism 
 
 link : https://ra-raptor.github.io/neumorphic-calculator/
 
